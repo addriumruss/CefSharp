@@ -11,7 +11,7 @@ namespace CefSharp.WinForms.Example
 {
     public partial class BrowserForm : Form
     {
-        private const string DefaultUrlForAddedTabs = "https://www.google.com";
+        private const string DefaultUrlForAddedTabs = "http://www.baidu.com";
 
         // Default to a small increment:
         private const double ZoomIncrement = 0.10;
@@ -37,7 +37,7 @@ namespace CefSharp.WinForms.Example
 
         private void BrowserFormLoad(object sender, EventArgs e)
         {
-            AddTab(CefExample.DefaultUrl);
+            AddTab(DefaultUrlForAddedTabs);
         }
 
         /// <summary>
